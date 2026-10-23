@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Arena | Gaming Hub</title>
+
+    <!-- Link to the separate CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>PIXEL <span>ARENA</span></h1>
+        <p>Your ultimate gaming destination</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <p class="tagline">LEVEL UP YOUR GAME</p>
+            <h2>ENTER THE ARENA.</h2>
+            <p>
+                Discover epic worlds, explore new adventures,
+                and find your next favorite game.
+            </p>
+            <a class="button" href="#games">Explore Games</a>
+        </section>
+
+        <section id="games">
+            <h2 class="section-title">Featured Games</h2>
+
+            <div class="game-container">
+                <article class="game-card">
+                    <div class="game-icon">⚔️</div>
+                    <h3>Cyber Strike</h3>
+                    <p>
+                        Enter a futuristic world full of action,
+                        challenges, and powerful enemies.
+                    </p>
+                    <span class="game-type">ACTION</span>
+                </article>
+
+                <article class="game-card">
+                    <div class="game-icon">🐉</div>
+                    <h3>Fantasy Quest</h3>
+                    <p>
+                        Explore magical lands, battle monsters,
+                        and become a legendary hero.
+                    </p>
+                    <span class="game-type">ADVENTURE</span>
+                </article>
+
+                <article class="game-card">
+                    <div class="game-icon">🏎️</div>
+                    <h3>Turbo Rush</h3>
+                    <p>
+                        Race at incredible speeds and compete
+                        to become the ultimate champion.
+                    </p>
+                    <span class="game-type">RACING</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Pixel Arena</h2>
+            <p>
+                Pixel Arena is a gaming hub made for players
+                who love exciting adventures, creative worlds,
+                and unforgettable gaming experiences.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pixel Arena | Game On!</p>
+    </footer>
+
+</body>
+</html>
+/* 1. TYPE SELECTOR */
+body {
+    background-color: #0b0b18;
+    color: #f5f5ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. ID SELECTOR */
+#main-header {
+    background-color: #17172b;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 30px 15px;
+    border-bottom: 3px solid #a855f7;
+}
+
+#main-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    letter-spacing: 3px;
+}
+
+#main-header span {
+    color: #22d3ee;
+}
+
+/* 3. CLASS SELECTOR */
+.navbar {
+    background-color: #24243b;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #22d3ee;
+}
+
+.navbar a {
+    color: #22d3ee;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    color: #c084fc;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #21113f,
+        #102c42
+    );
+    margin: 25px;
+    padding: 55px 20px;
+    border: 2px solid #a855f7;
+    border-radius: 15px;
+}
+
+.tagline {
+    color: #22d3ee;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    color: #c084fc;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.hero p {
+    line-height: 1.7;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    background-color: #a855f7;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: 2px solid #c084fc;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #22d3ee;
+    color: #0b0b18;
+}
+
+/* GAME SECTION */
+#games {
+    margin: 35px 25px;
+    padding: 20px;
+}
+
+.section-title {
+    color: #22d3ee;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #17172b;
+    flex: 1 1 220px;
+    max-width: 300px;
+    margin: 5px;
+    padding: 25px;
+    border: 2px solid #393956;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.game-card:hover {
+    border-color: #a855f7;
+}
+
+.game-icon {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.game-card h3 {
+    color: #c084fc;
+}
+
+.game-card p {
+    color: #c6c6dc;
+    line-height: 1.6;
+}
+
+.game-type {
+    display: inline-block;
+    color: #22d3ee;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: 1px solid #22d3ee;
+    border-radius: 20px;
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: #17172b;
+    text-align: center;
+    margin: 25px;
+    padding: 30px;
+    border: 2px solid #a855f7;
+    border-radius: 12px;
+}
+
+.about h2 {
+    color: #22d3ee;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    background-color: #24243b;
+    color: #c6c6dc;
+    text-align: center;
+    margin-top: 35px;
+    padding: 20px;
+    border-top: 2px solid #22d3ee;
+}
+
+/* MOBILE-FRIENDLY DESIGN */
+@media (max-width: 600px) {
+    #main-header h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        margin: 12px;
+        padding: 35px 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .navbar a {
+        margin: 0 8px;
+    }
+
+    #games {
+        margin: 15px 5px;
+        padding: 10px;
+    }
+
+    .game-card {
+        max-width: none;
+    }
+
+    .about {
+        margin: 12px;
+        padding: 20px;
+    }
+}
